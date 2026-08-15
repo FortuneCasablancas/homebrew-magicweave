@@ -7,32 +7,32 @@
 #
 #   brew install magicweave/tap/mw
 #
-# Placeholders replaced at release time: 0.8.0, 0f06b199a2ea507390d77ea1f2ca0d45b5e33cb8240c0f528fbba443ec14134e, etc.
+# Placeholders replaced at release time: 0.9.0, a4942b1ac2c8c6ea1ff655dbab2da4ce75cc9968287b67476c74d2a8c57f5e83, etc.
 class Mw < Formula
   desc "Magicweave developer CLI — build, validate, and ship game economies"
   homepage "https://www.magicweave.xyz"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
-  base = "https://dl.magicweave.xyz/v0.8.0"
+  base = "https://dl.magicweave.xyz/v0.9.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "#{base}/magicweave-0.8.0-darwin-arm64.tar.gz"
-      sha256 "0f06b199a2ea507390d77ea1f2ca0d45b5e33cb8240c0f528fbba443ec14134e"
+      url "#{base}/magicweave-0.9.0-darwin-arm64.tar.gz"
+      sha256 "a4942b1ac2c8c6ea1ff655dbab2da4ce75cc9968287b67476c74d2a8c57f5e83"
     else
-      url "#{base}/magicweave-0.8.0-darwin-x64.tar.gz"
-      sha256 "b4fb5c4237a16d534fda0de2cfda041f32caa15401b96a8c26bb67b672056428"
+      url "#{base}/magicweave-0.9.0-darwin-x64.tar.gz"
+      sha256 "a63b0063c42786ccadc0fff76f80a28411685b7cb145040bbdbfa4d45d320a9e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "#{base}/magicweave-0.8.0-linux-arm64.tar.gz"
-      sha256 "ac1230af78e600f06b6fe6c4ecdce0e201be2014e38becd820ce7556dc02a5e7"
+      url "#{base}/magicweave-0.9.0-linux-arm64.tar.gz"
+      sha256 "d329c71b098652d77e8798c511859acccbfcf6f8a860f8935cba568fe07fc1ae"
     else
-      url "#{base}/magicweave-0.8.0-linux-x64.tar.gz"
-      sha256 "90e93d0a95482653aa7bce1a9c0e839ec35bdd7cf882e26d69d479955646e06b"
+      url "#{base}/magicweave-0.9.0-linux-x64.tar.gz"
+      sha256 "74f6f59230a239f179e3e54c3c4463ae3d703ab386f583dc623dbf412a442883"
     end
   end
 
